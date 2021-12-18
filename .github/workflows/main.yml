@@ -27,7 +27,7 @@ jobs:
       - name: flake8 lint
         uses: py-actions/flake8@v2
         with:
-          ignore: "F401,E122,F841"
+          ignore: "E126,E122,F841"
           max-line-length: "100"
 # zip our code for lambda deployment
       - name: zip
