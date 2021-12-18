@@ -18,10 +18,10 @@ def lambda_handler(event, context):
         # start adding data to dynamodb
         try:
             table.put_item(
-            Item = {
-                "id": emp_data[0],
-                "name": emp_data[1],
-                "location": emp_data[2]
+            Item={
+                'id': emp_data[0],
+                'name': emp_data[1],
+                'location': emp_data[2]
             }
             )
         except Exception as e:
